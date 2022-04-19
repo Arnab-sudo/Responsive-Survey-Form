@@ -1,0 +1,200 @@
+/*Desktop*/
+
+*{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+   
+    
+    
+}
+#up-btn{
+    
+    padding: 0.3em;
+   
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 0.5em rgb(53, 83, 83);
+    position: fixed;
+    margin-left: 3rem;
+
+    
+}
+#directions{
+    position: fixed;
+}
+.dir-up{
+    margin-top: 30rem;
+    background-color: rgb(89, 192, 89);
+    
+    
+}
+.dir-down{
+    margin-top: 33rem;
+    background-color: rgb(207, 68, 68);
+}
+
+html{
+    background-color: rgb(255, 255, 255);
+
+}
+.header{
+    position: sticky;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 1em 0.5em;
+    margin-bottom: 0em;
+    font-size: larger;
+
+}
+#description{
+    font-weight: lighter;
+    margin-top: 1em;
+}
+fieldset{
+    background-color: rgb(219, 236, 236);
+    border-radius: 0.3em;
+    margin: 1em;
+    color: rgb(0, 0, 0);
+    box-shadow: 0.2em 0.2em 1em darlslategrey;
+    
+    
+}
+legend{
+    background-color: darkslategray;
+    padding: 0.3em 1em;
+    font-weight: bold;
+    color: aliceblue;
+}
+#form_navigator{
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    margin-left: 0em;
+  
+  
+   
+
+}
+#form_navigator li:nth-child(odd){
+    background-color: rgb(102, 102, 102);
+    
+}
+
+
+#form_navigator li{
+    list-style: none;
+    text-align: center;
+    padding: 0.8em 1em;
+    
+    
+    
+   
+   
+
+    
+}
+#form_navigator a{
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+   
+    
+   
+}
+
+
+#sections{
+    width: 100%;
+    display: block;
+    background-color: darkslategray;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 0.5em;
+    border: none;
+    text-align: center;
+}
+#survey-form{
+    margin: 0rem 8rem;
+
+}
+.form-section{
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.form-section label{
+    font-weight: light;
+    padding: 0em 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.form-section input[type=text],[type=date], select, [type=number]{
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    text-align: left;
+    
+}
+#self_dec{
+    text-align: center;
+}
+select{
+    background-color: darkcyan;
+    color: aliceblue;
+    
+}
+#self_dec label{
+    text-align: center;
+    padding: 0.2em 1em;
+}
+.form-section section{
+    display: block;
+    padding: 0.5em 0em;
+    text-align: left;
+}
+#comments{
+    width: 100%;
+}
+#submit{
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(11, 148, 73),rgb(72, 255, 56));
+    color: aliceblue;
+    padding: 0.5em 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    font-weight: bolder;
+}
+#reset_btn{
+    width: 10%;
+    background-color: red;
+    color: aliceblue;
+    padding: 0.5em 0.5em;
+    margin: 0.3em auto;
+    display: block;
+    border: none;
+    border-radius: 0.5em;
+    text-align: center;
+    
+
+}
+
+
+/*Mobile Phones*/
+
+@media only screen and (max-width: 600px){
+  *{
+      font-family:'Times New Roman', Times, serif;
+  }
+  #survey-form{
+    margin: 0rem 2rem;
+
+  }
+
+}
+
+/*Tablets*/

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="" >
+    
+    <title>Academic Portfolio Survey</title>
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d635f76a2c.js" crossorigin="anonymous"></script>
+    
+    
+    
+  </head>
+  <body>
+    <div id="directions">
+      <button id="up-btn" class="dir-up">
+        <i class="fas fa-arrow-circle-up fa-3x"></i>
+        
+      </button><br>
+      <button id="up-btn" class="dir-down">
+        
+        <i class="fas fa-arrow-circle-down fa-3x"></i>
+      </button>
+    </div>
+    
+   
+    <main id="main">
+      <header class="header">
+        <h1 id="title">Academic Portfolio Survey</h1>
+        <p id="description">This is a survey of the academic career of an individual. Please be honest about the data you provide.</p>
+        
+      </header>
+      <button id="sections">Show sections</button>
+     
+      
+      <nav id="form_navigator">
+        
+
+        <div>
+          <li>
+            <a  type="button" href="#personal_info">Personal Information</a>
+          </li>
+          <li>
+            <a type="button" href="#higher_secondary">Higher Secondary</a>
+          </li>
+          <li>
+            <a  type="button" href="#graduation">Graduation</a>
+          </li>
+          <li>
+            <a type="button" href="#post-graduation-details">Post Graduation</a>
+          </li>
+          <li>
+            <a type="button" href="#work_xp"> Work Experience</a>
+          </li>
+        </div>
+
+      </nav>
+      <br>
+
+      <form action="" id="survey-form">
+
+        <fieldset id="personal_info">
+          <legend>Personal Information</legend>
+          <div class="form-section">
+            <label for="name" id="name-label" >Name</label>
+            <input type="text" placeholder="Enter your name here" id="name" class="form-control" required>
+          </div>
+          <br>
+          <div class="form-section">
+            <label for="dob" id="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+          </div>
+
+          <br>
+
+          <div class="form-section">
+            <label for="number" id="num-label">Age <span class="opt">(as of June 2022)</span></label>
+            <input type="number" id="number" class="form-control" placeholder="Age(in years)" min="18" max="100">
+          </div>
+          <br>
+
+          <div class="form-section">
+            <label for="father_name" id="father">Father's name <span>(optional)</span></label>
+            <input type="text" name="father_name" id="father_name" placeholder="Enter your Father's name">
+          </div>
+          <br>
+          <div class="form-section">
+            <label for="mother_name" id="mother">Mother's/Guardian's name</label>
+            <input type="text" name="mother_name" id="mother_name" placeholder="Enter the Mother's name" required>
+          </div>
+          <br>
+          <div class="form-section">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Emdail" required>
+          </div>
+
+
+
+
+
+          
+          
+
+
+
+        </fieldset>
+        
+        <br>
+        
+        <fieldset id="higher_secondary">
+          <legend>Higher Secondary</legend>
+          <div class="form-section">
+            <p>Pass status</p>
+           
+            <input type="radio" name="pass_or_appearing" id="pass" value="pass">
+            <label for="pass">Passed</label >
+            <br>
+            <input type="radio" name="pass_or_appearing" id="appear" value="appear">
+            <label for="appear" >Appearing</label>
+
+          </div>
+
+          <br>
+          <div class="form-section">
+
+            <section id="school_detail">
+              <label for="school">School of passing</label>
+              <input type="text" name="school" id="school" placeholder="Name of your school" maxlength="100">
+            </section><br>
+            <section id="school_detail">
+              <label for="board">Board</label>
+              <input type="text" name="board" id="board" placeholder="Name of the board">
+            </section><br>
+            <section id="school_detail">
+              <label for="date_of_passing">Date of Passing</label>
+              <input type="date" name="date_of_passing" id="date_of_passing">
+            </section><br>
+            
+            
+
+
+            
+            
+
+           
+           
+
+          </div>
+          <br>
+          <div class="form-section">
+            <section id="marks_details">
+              <label for="max_marks">Total Marks</label>
+              <input type="number" id="max-marks" name="max_marks">
+            </section><br>
+            <section id="marks_details">
+              <label for="marks_got">Marks obtained</label>
+              <input type="number" id="marks_got" name="marks_got">
+            </section><br>
+            <section id="marks_details">
+              <label>Percentage of Marks received : </label>
+              <textarea id="percentage" cols="8" rows="1" style="resize:none" minlength="2" maxlength="10"></textarea>
+            </section><br>
+            
+            
+            
+          </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset id="graduation">
+          <legend>Graduation</legend>
+          <div class="form-section">
+            <p>Pass status</p>
+           
+            <input type="radio" name="univ_pass_or_appearing" id="univ_pass" value="univ_pass">
+            <label for="univ_pass">Passed</label >
+            <br>
+            <input type="radio" name="univ_pass_or_appearing" id="univ_appear" value="univ_appear">
+            <label for="univ_appear" >Appearing</label>
+
+          </div>
+
+          <br>
+          <div class="form-section">
+
+            <section id="college_detail">
+              <label for="university">College/University of passing</label>
+              <input type="text" name="university" id="university" placeholder="Name of your college/university">
+            </section><br>
+            <section id="college_detail">
+              <label for="univ_board">Board</label>
+              <input type="text" name="univ_board" id="univ_board" placeholder="Name of the board">
+            </section><br>
+            <section id="college_detail">
+              <label for="date_of_passing_univ">Date of Passing</label>
+              <input type="date" name="date_of_passing_univ" id="date_of_passing_univ">
+            </section>
+            
+            
+
+           
+            
+
+          </div>
+          <br>
+          <div class="form-section">
+
+            <section id="grad-marks">
+              <label for="max_marks_univ">Total Marks</label>
+              <input type="number" id="max_marks_univ" name="max_marks_univ">
+            </section><br>
+            <section id="grad-marks">
+              <label for="marks_got_univ">Marks obtained</label>
+              <input type="number" id="marks_got_univ" name="marks_got_univ">
+            </section><br>
+            <section id="grad-marks">
+              <label>Percentage of Marks received : </label>
+              <textarea id="percentage" cols="8" rows="1" style="resize:none" minlength="2" maxlength="10"></textarea>
+            </section>
+            
+            
+            
+          </div>
+
+        </fieldset>
+
+        <br>
+
+        <div class="form-section" id="check_post_grad">
+          <p >Have you pursuid post-graduation</p> 
+          <label for="yes">Yes</label>
+          <input type="radio" name="post-grad-ans" id="yes" value="yes">
+          <label for="no">No</label>
+          <input type="radio" name="post-grad-ans" value="no" id="no">
+        </div>
+
+        <br>
+
+        <fieldset id="post-graduation-details">
+          <legend>Post-graduation</legend>
+          <div class="form-section">
+            <p>Pass status</p>
+           
+            <input type="radio" name="post_pass_or_appearing" id="post_pass" value="post_pass">
+            <label for="post_pass">Passed</label >
+            <br>
+            <input type="radio" name="post_pass_or_appearing" id="post_appear" value="post_appear">
+            <label for="post_appear" >Appearing</label>
+
+          </div>
+
+          <br>
+          <div class="form-section">
+
+            <section id="postgrad-detail">
+              <label for="post_university">College/University of passing</label>
+              <input type="text" name="post_university" id="post_university" placeholder="Name of your college/university">
+            </section><br>
+            <section id="postgrad-detail">
+              <label for="post_board">Board</label>
+              <input type="text" name="post_board" id="post_board" placeholder="Name of the board">
+            </section><br>
+            <section id="postgrad-detail">
+              <label for="date_of_passing_post_univ">Date of Passing</label>
+              <input type="date" name="date_of_passing_post_univ" id="date_of_passing_post_univ">
+            </section>
+            
+            
+           
+            
+
+          </div>
+          <br>
+          <div class="form-section">
+
+            <section id="postgrad-marks">
+              <label for="max_marks_post_univ">Total Marks</label>
+              <input type="number" id="max_marks_post_univ" name="max_marks_post_univ">
+            </section><br>
+            <section id="postgrad-marks">
+              <label for="marks_got_post_univ">Marks obtained</label>
+              <input type="number" id="marks_got_post_univ" name="marks_got_post_univ">
+            </section><br>
+            <section id="postgrad-marks">
+              <label>Percentage of Marks received : </label>
+              <textarea id="percentage" cols="8" rows="1" style="resize:none" minlength="2" maxlength="10"></textarea>
+            </section>
+            
+            
+            
+          </div>
+
+
+
+        </fieldset>
+
+        <br>
+
+        <fieldset id="work_xp">
+          <legend>Work Experience</legend>
+          <div class="form-section">
+
+            <label for="industry">Industry you worked in</label>
+            <select name="industry" id="industry" required>
+             <option value="finance">Finance & Insurance</option>
+             <option value="tech">Software & IT</option>
+             <option value="media">Mass communication</option>
+             <option value="fashion">Fashion</option>
+             <option value="service">Government services</option>
+
+            </select>
+         
+          <input type="number" placeholder="Years you have worked">
+
+          </div>
+          
+
+
+
+        </fieldset>
+
+        <br>
+
+        <fieldset id="misc_info">
+          <legend>Miscellaneous Details</legend>
+          <div class="form-section">
+            <p>Current Job Role</p>
+            <select name="" id="dropdown" class="form-control" required>
+              <option value="student">Student</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="job">Full Time Job</option>
+              <option value="btw_jobs">Between jobs</option>
+            </select>
+          </div>
+
+          <div class="form-section">
+            <p>Residence preference</p>
+            
+            <input value="india" name="country" type="radio" id="india">
+            <label for="india">india</label><br>
+            
+            <input value="usa" name="country" type="radio" id="usa">
+            <label for="usa">USA</label><br>
+            
+            <input value="eu" name="country"  type="radio" id="eu">
+            <label for="eu">EU</label><br>
+            
+            <input value="canada" name="country"  type="radio" id="canada">
+            <label for="canada">Canada</label><br>
+            
+  
+          </div>
+
+          <div class="form-section">
+            <p>Skills</p>
+            <input  name="skills" value="office" type="checkbox"  id="office" class="checkbox">
+            <label for="office">Proficient in Microsoft Office</label><br>
+            <input name="skills" value="english" id="english" type="checkbox" class="checkbox">
+            <label for="english">Proficient in English</label><br>
+            <input name="skills" value="coding" id="coding" type="checkbox" class="checkbox">
+            <label for="coding">Proficient at programming</label><br>
+            <input id="misc" name="skills" value="misc" type="checkbox" class="checkbox">
+            <label for="misc">Miscellaneous</label><br>
+  
+  
+          </div>
+  
+
+        </fieldset>
+
+
+        
+
+
+        
+
+        
+
+        
+
+        
+
+        
+
+       
+
+        <div class="form-section">
+          <p>Additional Details you want to provide?</p>
+          <textarea name="comment" rows="8"  id="comments" class="text-input" cols="80" placeholder="Please tell us more about yourself..."></textarea>
+        </div>
+        <br>
+        <fieldset id="self_dec">
+          <legend>Self-decalartion</legend>
+          <label for="tick">
+            The information being provided are true to thebest of my knowledge and i attest to it.
+          </label>
+          <input type="checkbox" id="tick">
+        </fieldset>
+        <br>
+
+        <div class="form-section"><button type="submit" class="submit-button" id="submit">SUBMIT</button></div>
+        <br>
+        <input type="reset" id="reset_btn">
+
+        
+
+
+
+
+      </form>
+      
+    </main>
+    
+
+    
+
+  </body>
+</html>
